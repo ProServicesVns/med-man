@@ -8,7 +8,7 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.API_KEY || 'med-pro-services-2026';
-const EXCEL_PATH = process.env.EXCEL_PATH || path.join(__dirname, '..', 'Complete_Indian_Medicine_List_June_2026.xlsx');
+const EXCEL_PATH = process.env.EXCEL_PATH || path.join(__dirname, 'Complete_Indian_Medicine_List_June_2026.xlsx');
 
 // Rate limiting
 const limiter = rateLimit({
