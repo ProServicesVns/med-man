@@ -13,6 +13,8 @@ const API_KEY = process.env.API_KEY || 'med-pro-services-2026';
 const DB_PATH = path.join(__dirname, 'medicines.db');
 const TSV_PATH = path.join(__dirname, 'medicines.tsv.gz');
 
+app.set('trust proxy', 1);
+
 const limiter = rateLimit({
   windowMs: 60 * 1000,
   max: 120,
