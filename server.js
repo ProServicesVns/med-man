@@ -216,6 +216,11 @@ app.get('/api/lookup', (req, res) => {
   res.json({ names: result, time: (Date.now() - t0) + 'ms' });
 });
 
+// Root redirect
+app.get('/', (req, res) => {
+  res.redirect('/api/health?key=' + encodeURIComponent(API_KEY));
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', records: allData.length, version: '1.0.0' });
