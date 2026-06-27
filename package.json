@@ -1,0 +1,15 @@
+{
+  "name": "medicine-dashboard-api",
+  "version": "1.0.0",
+  "description": "Backend API for Indian Medicine Dashboard - PRO SERVICES",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "xlsx": "^0.18.5",
+    "express-rate-limit": "^7.1.4"
+  }
+}
